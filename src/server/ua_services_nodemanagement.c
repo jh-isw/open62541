@@ -1543,7 +1543,7 @@ recursiveDeleteNode(UA_Server *server, UA_Session *session,
     UA_BrowseDescription bd;
     UA_BrowseDescription_init(&bd);
     bd.nodeId = node->nodeId;
-    bd.referenceTypeId = UA_NODEID_NUMERIC(0, UA_NS0ID_AGGREGATES);
+    bd.referenceTypeId = UA_NODEID_NUMERIC(0, UA_NS0ID_HIERARCHICALREFERENCES);
     bd.includeSubtypes = true;
     bd.browseDirection = UA_BROWSEDIRECTION_FORWARD;
 
